@@ -1,4 +1,4 @@
-float size = 5;
+float sizer = 5;
 
 void setup() {
   size(500, 500);
@@ -6,7 +6,7 @@ void setup() {
 
 void draw() {
   background(0);
-  drawFractal(width/2, height/2, size);
+  drawFractal(width/2, height/2, sizer);
 }
 
 void drawFractal(float x, float y, float d) {
@@ -24,8 +24,8 @@ void drawFractal(float x, float y, float d) {
 
 void keyPressed() {
   if (key == 'd') {
-    size *= 0.75;
+    sizer *= 0.75;
   } else if (key == 's') {
-    size *= 1.5;
+    sizer *= 1.5;
   }
 }
